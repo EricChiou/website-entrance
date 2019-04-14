@@ -10,5 +10,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif, Microsoft JhengHei, monospace;
+  background-color: #323232;
 }
 </style>
