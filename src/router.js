@@ -10,6 +10,10 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect: '/entrance'
+    },
+    {
+      path: '/entrance',
       name: 'home',
       component: Home
     }
