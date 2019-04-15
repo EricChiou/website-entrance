@@ -3,7 +3,7 @@
     <div class="title">網站入口</div>
     <div class="entrance-list">
       <div class="entrance-block" @click="link2Website('wedding')">
-        <img src="../assets/invitation_card.png">
+        <img src="../assets/images/invitation_card.png">
         <div class="website-title">Wedding Invitation Card</div>
         <div class="website-description">
           <div class="inline-block"></div>

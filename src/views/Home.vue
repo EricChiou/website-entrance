@@ -2,8 +2,8 @@
   <div class="home">
     <div class="bg">
       <div class="inline-block"></div>
-      <img src="../assets/bi.jpg">
-      <img class="mobile" src="../assets/bi_m.jpg">
+      <img src="../assets/images/bi.jpg">
+      <img class="mobile" src="../assets/images/bi_m.jpg">
       <div class="mask"></div>
     </div>
     <div class="main">

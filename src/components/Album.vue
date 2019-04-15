@@ -4,16 +4,16 @@
       <div class="title">Calico & MooMoo</div>
       <div class="picture-list">
         <div class="picture">
-          <img src="../assets/calico_1.jpg">
+          <img src="../assets/images/calico_1.jpg">
         </div>
         <div class="picture">
-          <img src="../assets/calico_2.jpg">
+          <img src="../assets/images/calico_2.jpg">
         </div>
         <div class="picture">
-          <img src="../assets/moomoo_1.jpg">
+          <img src="../assets/images/moomoo_1.jpg">
         </div>
         <div class="picture">
-          <img src="../assets/moomoo_2.jpg">
+          <img src="../assets/images/moomoo_2.jpg">
         </div>
       </div>
     </div>

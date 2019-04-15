@@ -1,10 +1,10 @@
 <template>
   <div id="header-container">
     <div class="background-img">
-      <img class="header-bi" src="../assets/header_bi.png">
-      <img class="header-bi-m" src="../assets/header_bi_m.png">
-      <img class="title" src="../assets/header_title.png">
-      <img class="sub-title" src="../assets/header_sub_title.png">
+      <img class="header-bi" src="../assets/images/header_bi.png">
+      <img class="header-bi-m" src="../assets/images/header_bi_m.png">
+      <img class="title" src="../assets/images/header_title.png">
+      <img class="sub-title" src="../assets/images/header_sub_title.png">
     </div>
   </div>
 </template>

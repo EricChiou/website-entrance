@@ -6,7 +6,7 @@
       </li>
       <li>
         <a href="https://github.com/EricChiou/website-entrance" target="_blank">
-          <img src="../assets/github.png" width="25" height="25">Github
+          <img src="../assets/images/github.png" width="25" height="25">Github
         </a>
       </li>
     </ul>
