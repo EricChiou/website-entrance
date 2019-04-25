@@ -7,7 +7,7 @@
         </a>
       </li>
     </ul>
-    <div class="right">© 2019 All rights reserved</div>
+    <div class="right">© 2019 Calico & MooMoo</div>
   </div>
 </template>
 
