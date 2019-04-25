@@ -12,6 +12,8 @@
         <Album></Album>
         <div class="show-bg"></div>
         <Entrance></Entrance>
+        <div class="show-bg"></div>
+        <About></About>
         <Footer></Footer>
       </div>
     </div>
@@ -22,6 +24,7 @@
 import Header from '../components/Header.vue';
 import Album from '../components/Album.vue';
 import Entrance from '../components/Entrance.vue';
+import About from '../components/About.vue';
 import Footer from '../components/Footer.vue';
 
 export default {
@@ -30,6 +33,7 @@ export default {
     Header,
     Album,
     Entrance,
+    About,
     Footer
   }
 };
@@ -99,4 +103,3 @@ export default {
   }
 }
 </style>
-
