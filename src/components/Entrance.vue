@@ -2,29 +2,35 @@
   <div id="entrance-container">
     <div class="title">網站入口</div>
     <div class="entrance-list">
-      <div class="entrance-block" @click="link2Website('wedding')">
-        <img src="../assets/images/invitation_card.png">
-        <div class="website-title">Wedding Invitation Card</div>
-        <div class="website-description">
-          <div class="inline-block"></div>
-          <div class="content">
-            該來的終於還是來啦！
-            <br>我的婚禮將於 2019/11/23 舉辦，歡迎大家來參加喔～
-            <br>這是電子喜帖的連結
-          </div>
-        </div>
-        <div class="mask">
-          <div class="inline-block"></div>
-          <div class="go">前往網站</div>
-        </div>
-      </div>
+      <EntranceBlock v-for="website in websites" :key="website.link" :website="website"></EntranceBlock>
     </div>
   </div>
 </template>
 
 <script>
+import EntranceBlock from './EntranceBlock.vue';
+
 export default {
   name: 'Entrance',
+  components: { EntranceBlock },
+  data: () => ({
+    websites: [
+      {
+        path: 'wedding',
+        imgSrc: require('../assets/images/invitation_card.png'),
+        title: 'Wedding Invitation Card',
+        content:
+          '該來的終於還是來啦！\n我的婚禮將於 2019/11/23 舉辦，歡迎大家來參加喔～\n這是電子喜帖的連結'
+      },
+      {
+        path: 'frontend-daily-life',
+        imgSrc: require('../assets/images/frontend_daily_life.png'),
+        title: 'Frontend Daily Life',
+        content:
+          '記錄我在前端遇到的大小事、心得及其他相關技術，並推薦一些好用網站。'
+      }
+    ]
+  }),
   methods: {
     link2Website: url => {
       console.log(window.location.origin + '/' + url);
@@ -49,60 +55,6 @@ export default {
   .entrance-list {
     margin: 5px 10%;
     padding: 0 10px 10px 10px;
-    .entrance-block {
-      display: inline-block;
-      position: relative;
-      width: calc(25% - 10px);
-      margin: 0 5px;
-      color: #323232;
-      background-color: #eeeeee;
-      cursor: pointer;
-      &:hover {
-        .mask {
-          display: block;
-        }
-      }
-      img {
-        width: 100%;
-      }
-      .website-title {
-        margin: 5px;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: underline;
-      }
-      .website-description {
-        margin: 5px 15px;
-        height: 100px;
-        .content {
-          display: inline-block;
-          vertical-align: middle;
-        }
-      }
-      .mask {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        font-size: 64px;
-        font-weight: bold;
-        text-align: center;
-        color: #eeeeee;
-        background-color: rgba(0, 0, 0, 0.4);
-        .go {
-          display: inline-block;
-          vertical-align: middle;
-        }
-      }
-    }
-  }
-  .inline-block {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
   }
   @media only screen and (max-width: 767px) {
     padding: 1vh 0 2vh 0;
@@ -112,10 +64,6 @@ export default {
     .entrance-list {
       margin: 5px 0;
       padding: 0 5px 10px 5px;
-      .entrance-block {
-        width: calc(100% - 10px);
-        margin: 2.5px 5px;
-      }
     }
   }
 }
