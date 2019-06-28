@@ -20,7 +20,7 @@ export default {
         imgSrc: require('../assets/images/invitation_card.png'),
         title: 'Wedding Invitation Card',
         content:
-          '該來的終於還是來啦！\n我的婚禮將於 2019/11/23 舉辦，歡迎大家來參加喔～\n這是電子喜帖的連結'
+          '該來的終於還是來啦！\n我的婚禮將於 2019/11/23 舉辦，歡迎大家來參加喔～\n這是電子喜帖的連結。'
       },
       {
         path: 'frontend-daily-life',
