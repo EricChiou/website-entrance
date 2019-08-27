@@ -4,7 +4,7 @@
       <div class="title">Calico & MooMoo</div>
       <div class="picture-list">
         <div class="picture">
-          <img src="../assets/images/calico_1.jpg">
+          <img src="../assets/images/calico_1.png">
         </div>
         <div class="picture">
           <img src="../assets/images/calico_2.jpg">
@@ -13,7 +13,7 @@
           <img src="../assets/images/moomoo_1.jpg">
         </div>
         <div class="picture">
-          <img src="../assets/images/moomoo_2.jpg">
+          <img src="../assets/images/moomoo_2.png">
         </div>
       </div>
     </div>

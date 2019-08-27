@@ -20,14 +20,27 @@ export default {
         imgSrc: require('../assets/images/invitation_card.png'),
         title: 'Wedding Invitation Card',
         content:
-          '該來的終於還是來啦！\n我的婚禮將於 2019/11/23 舉辦，歡迎大家來參加喔～\n這是電子喜帖的連結。'
+          '該來的終於還是來啦！\n我的婚禮將於 2019/11/23 舉辦，歡迎大家來參加喔～\n這是電子喜帖的連結。',
+        icon: null
       },
       {
         path: 'frontend-daily-life',
         imgSrc: require('../assets/images/frontend_daily_life.png'),
         title: 'Frontend Daily Life',
         content:
-          '記錄我在前端遇到的大小事、心得及其他相關技術，並推薦一些好用網站。'
+          '記錄我在前端遇到的大小事、心得及其他相關技術，並推薦一些好用網站。',
+        icon: `
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z" />
+          </svg>
+        `
       }
     ]
   }),

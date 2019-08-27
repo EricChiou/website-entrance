@@ -2,7 +2,8 @@
   <div class="entrance-block-container">
     <div class="entrance-block" @click="link2Website(website.path)">
       <div class="entrance-content">
-        <img :src="website.imgSrc">
+        <img :src="website.imgSrc" />
+        <div ref="icon" class="icon"></div>
         <div class="website-title">{{website.title}}</div>
         <div class="website-description">
           <div class="inline-block"></div>
@@ -20,11 +21,25 @@
 <script>
 export default {
   props: {
-    website: { path: String, imgSrc: String, title: String, content: String }
+    website: {
+      path: String,
+      imgSrc: String,
+      title: String,
+      content: String,
+      icon: String
+    }
   },
   methods: {
     link2Website(path) {
       window.location = window.location.origin + '/' + path;
+    }
+  },
+  mounted() {
+    if (this.website.icon) {
+      this.$refs.icon.innerHTML = this.website.icon;
+      this.$refs.icon.getElementsByTagName('svg')[0].style.width = '30%';
+      this.$refs.icon.getElementsByTagName('svg')[0].style.height = 'auto';
+      this.$refs.icon.getElementsByTagName('svg')[0].style.color = 'rgba(0, 0, 0, 0.7)';
     }
   }
 };
@@ -49,6 +64,13 @@ export default {
       left: 0;
       img {
         width: 100%;
+      }
+      .icon {
+        position: absolute;
+        top: 47.5%;
+        right: 0;
+        left: 0;
+        text-align: right;
       }
       .website-title {
         margin: 5px;
