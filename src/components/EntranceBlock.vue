@@ -64,6 +64,7 @@ export default {
       left: 0;
       img {
         width: 100%;
+        background-color: #ccc;
       }
       .icon {
         position: absolute;

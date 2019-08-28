@@ -1,6 +1,11 @@
 <template>
   <div id="entrance-container">
-    <div class="title">網站入口</div>
+    <div class="title">
+      <div class="text">
+        網站入口
+        <img src="../assets/images/calico_head_tie.png" />
+      </div>
+    </div>
     <div class="entrance-list">
       <EntranceBlock v-for="website in websites" :key="website.link" :website="website"></EntranceBlock>
     </div>
@@ -58,12 +63,25 @@ export default {
   padding: 3vh 0 5vh 0;
   background-color: #212121;
   .title {
-    font-size: 32px;
-    font-weight: bold;
     text-align: center;
-    text-decoration: underline;
-    color: #eeeeee;
     background-color: #212121;
+    .text {
+      position: relative;
+      display: inline-block;
+      height: 75px;
+      font-size: 32px;
+      font-weight: bold;
+      text-decoration: underline;
+      color: #eeeeee;
+      line-height: 75px;
+      img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: calc(100% + 5px);
+        height: 75px;
+      }
+    }
   }
   .entrance-list {
     margin: 5px 10%;
@@ -72,7 +90,14 @@ export default {
   @media only screen and (max-width: 767px) {
     padding: 1vh 0 2vh 0;
     .title {
-      font-size: 24px;
+      .text {
+        font-size: 24px;
+        height: 65px;
+        line-height: 65px;
+        img {
+          height: 65px;
+        }
+      }
     }
     .entrance-list {
       margin: 5px 0;

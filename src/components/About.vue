@@ -1,17 +1,22 @@
 <template>
   <div id="about-container">
-    <div class="title">關於我</div>
+    <div class="title">
+      <div class="text">
+        <img src="../assets/images/moomoo_head_tie.png" />
+        關於我
+      </div>
+    </div>
     <div class="content">
       前端工程師，平常喜歡玩電腦、看電影、寫寫自己的網站、玩貓！(´ω`)
-      <br>
+      <br />
       <div class="about-img">
-        <img src="../assets/images/play_cat.jpg">
+        <img src="../assets/images/play_cat.jpg" />
       </div>
-      <br>主修 Angular2，對於 React、Vue 也略有涉略
-      <br>懂一些後端，主要使用過 Golang 和 Nodejs，也寫過 Java 和 Python
-      <br>
-      <br>
-      <br>我的 Email：
+      <br />主修 Angular2，對於 React、Vue 也略有涉略
+      <br />懂一些後端，主要使用過 Golang 和 Nodejs，也寫過 Java 和 Python
+      <br />
+      <br />
+      <br />我的 Email：
       <a :href="mailTo">miatlab@gmail.com</a>
     </div>
   </div>
@@ -38,6 +43,23 @@ export default {
     font-weight: bold;
     text-align: center;
     text-decoration: underline;
+    .text {
+      position: relative;
+      display: inline-block;
+      height: 75px;
+      font-size: 32px;
+      font-weight: bold;
+      text-decoration: underline;
+      color: #eeeeee;
+      line-height: 75px;
+      img {
+        position: absolute;
+        top: -5px;
+        right: calc(100% + 5px);
+        bottom: 5px;
+        height: 75px;
+      }
+    }
   }
   .content {
     display: inline-block;
@@ -61,7 +83,16 @@ export default {
   @media only screen and (max-width: 767px) {
     padding: 1vh 0 2vh 0;
     .title {
-      font-size: 24px;
+      .text {
+        font-size: 24px;
+        height: 65px;
+        line-height: 65px;
+        img {
+          top: -3px;
+          bottom: 3px;
+          height: 65px;
+        }
+      }
     }
     .content {
       font-size: 16px;

@@ -1,19 +1,23 @@
 <template>
   <div id="album-container">
     <div class="album">
-      <div class="title">Calico & MooMoo</div>
+      <div class="title">
+        <img src="../assets/images/calico_head.png" />
+        <div class="text">Calico & MooMoo</div>
+        <img src="../assets/images/moomoo_head.png" />
+      </div>
       <div class="picture-list">
         <div class="picture">
-          <img src="../assets/images/calico_1.png">
+          <img src="../assets/images/calico_1.png" />
         </div>
         <div class="picture">
-          <img src="../assets/images/calico_2.jpg">
+          <img src="../assets/images/calico_2.jpg" />
         </div>
         <div class="picture">
-          <img src="../assets/images/moomoo_1.jpg">
+          <img src="../assets/images/moomoo_1.jpg" />
         </div>
         <div class="picture">
-          <img src="../assets/images/moomoo_2.png">
+          <img src="../assets/images/moomoo_2.png" />
         </div>
       </div>
     </div>
@@ -32,12 +36,23 @@ export default {
   .album {
     padding: 3vh 0 5vh 0;
     .title {
-      font-size: 32px;
-      font-weight: bold;
-      font-family: monospace;
       text-align: center;
-      text-decoration: underline;
-      color: #eeeeee;
+      .text,
+      img {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .text {
+        margin: 0 10px 0 5px;
+        font-size: 32px;
+        font-weight: bold;
+        font-family: monospace;
+        text-decoration: underline;
+        color: #eeeeee;
+      }
+      img {
+        height: 85px;
+      }
     }
     .picture-list {
       margin: 5px 10%;
@@ -59,7 +74,21 @@ export default {
     .album {
       padding: 1vh 0 2vh 0;
       .title {
-        font-size: 24px;
+        white-space: nowrap;
+        .text {
+          font-size: 24px;
+        }
+        img {
+          height: 60px;
+        }
+        @media only screen and (max-width: 359px) {
+          .text {
+            font-size: 22px;
+          }
+          img {
+            height: 55px;
+          }
+        }
       }
       .picture-list {
         margin: 5px 0;
