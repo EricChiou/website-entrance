@@ -6,35 +6,23 @@
         關於我
       </div>
     </div>
-    <div ref="content" class="content">
-      <iframe src="https://www.calicomoo.ml/about?color=#eeeeee&fontSize=18px&textAlign=center"></iframe>
+    <div class="content">
+      <iframe
+        ref="iframe"
+        src="https://www.calicomoo.ml/about?color=#eeeeee&fontSize=18px&textAlign=center"
+      ></iframe>
     </div>
   </div>
 </template>
 
 <script>
-import { setTimeout } from 'timers';
 export default {
-  methods: {
-    resize() {
-      const iframe = document.getElementsByTagName('iframe')[0];
-      if (iframe) {
-        const contentDocument = iframe.contentDocument;
-        if (contentDocument) {
-          const about = contentDocument.getElementById('about');
-          if (about) {
-            this.$refs.content.style.height = `${about.scrollHeight}px`;
-            return;
-          }
-        }
+  created() {
+    window.onmessage = event => {
+      if (event.data.id === 'about') {
+        this.$refs.iframe.style.height = `${event.data.height}px`;
       }
-      setTimeout(() => {
-        this.resize();
-      }, 100);
-    }
-  },
-  mounted() {
-    this.resize();
+    };
   }
 };
 </script>
