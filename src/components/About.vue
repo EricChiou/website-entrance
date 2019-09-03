@@ -6,29 +6,36 @@
         關於我
       </div>
     </div>
-    <div class="content">
-      前端工程師，平常喜歡玩電腦、看電影、寫寫自己的網站、玩貓！(´ω`)
-      <br />
-      <div class="about-img">
-        <img src="../assets/images/play_cat.jpg" />
-      </div>
-      <br />主修 Angular2，對於 React、Vue 也略有涉略
-      <br />懂一些後端，主要使用過 Golang 和 Nodejs，也寫過 Java 和 Python
-      <br />
-      <br />
-      <br />我的 Email：
-      <a :href="mailTo">miatlab@gmail.com</a>
+    <div ref="content" class="content">
+      <iframe src="https://www.calicomoo.ml/about?color=#eeeeee&fontSize=18px&textAlign=center"></iframe>
     </div>
   </div>
 </template>
 
 <script>
+import { setTimeout } from 'timers';
 export default {
-  data: () => ({
-    mailTo: `mailto:miatlab@gmail.com?subject=${encodeURIComponent(
-      'Calico & MooMoo'
-    )}`
-  })
+  methods: {
+    resize() {
+      const iframe = document.getElementsByTagName('iframe')[0];
+      if (iframe) {
+        const contentDocument = iframe.contentDocument;
+        if (contentDocument) {
+          const about = contentDocument.getElementById('about');
+          if (about) {
+            this.$refs.content.style.height = `${about.scrollHeight}px`;
+            return;
+          }
+        }
+      }
+      setTimeout(() => {
+        this.resize();
+      }, 100);
+    }
+  },
+  mounted() {
+    this.resize();
+  }
 };
 </script>
 
@@ -68,15 +75,10 @@ export default {
     font-size: 18px;
     color: #eeeeee;
     background-color: #323232;
-    .about-img {
-      display: inline-block;
-      margin-top: 2px;
-      img {
-        width: 100%;
-      }
-    }
-    a {
-      color: #eeeeee;
+    iframe {
+      width: 640px;
+      max-width: 100%;
+      border: none;
     }
   }
 
