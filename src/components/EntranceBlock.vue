@@ -39,7 +39,8 @@ export default {
       this.$refs.icon.innerHTML = this.website.icon;
       this.$refs.icon.getElementsByTagName('svg')[0].style.width = '30%';
       this.$refs.icon.getElementsByTagName('svg')[0].style.height = 'auto';
-      this.$refs.icon.getElementsByTagName('svg')[0].style.color = 'rgba(0, 0, 0, 0.7)';
+      this.$refs.icon.getElementsByTagName('svg')[0].style.color =
+        'rgba(0, 0, 0, 0.7)';
     }
   }
 };
@@ -48,8 +49,9 @@ export default {
 <style lang="scss" scoped>
 .entrance-block-container {
   display: inline-block;
-  margin: 0 5px;
+  margin: 2.5px 5px;
   width: calc(25% - 10px);
+  max-width: 420px;
   .entrance-block {
     position: relative;
     padding-top: 150%;
@@ -64,11 +66,12 @@ export default {
       left: 0;
       img {
         width: 100%;
+        height: calc(100% * 2 / 3);
         background-color: #ccc;
       }
       .icon {
         position: absolute;
-        top: 47.5%;
+        top: 46.5%;
         right: 0;
         left: 0;
         text-align: right;
@@ -89,6 +92,7 @@ export default {
         .content {
           display: inline-block;
           vertical-align: middle;
+          text-align: left;
         }
       }
       .mask {
@@ -121,15 +125,12 @@ export default {
     }
   }
   @media only screen and (max-width: 1399px) {
-    margin: 2.5px 5px;
     width: calc(100% / 3 - 10px);
   }
   @media only screen and (max-width: 1023px) {
-    margin: 2.5px 5px;
     width: calc(50% - 10px);
   }
   @media only screen and (max-width: 767px) {
-    margin: 2.5px 5px;
     width: calc(100% - 10px);
   }
 }
