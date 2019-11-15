@@ -8,6 +8,7 @@
         <div class="website-description">
           <div class="inline-block"></div>
           <div class="content">{{website.content}}</div>
+          <div class="short-content">{{website.shortContent}}</div>
         </div>
         <div class="mask">
           <div class="inline-block"></div>
@@ -26,21 +27,27 @@ export default {
       imgSrc: String,
       title: String,
       content: String,
+      shortContent: String,
       icon: String
     }
   },
   methods: {
     link2Website(path) {
-      window.location = window.location.origin + '/' + path;
+      window.location = 'https://www.calicomoo.ml/' + path;
     }
   },
   mounted() {
     if (this.website.icon) {
       this.$refs.icon.innerHTML = this.website.icon;
-      this.$refs.icon.getElementsByTagName('svg')[0].style.width = '30%';
-      this.$refs.icon.getElementsByTagName('svg')[0].style.height = 'auto';
+      this.$refs.icon.getElementsByTagName('svg')[0].style.width =
+        'calc(100% / 3)';
       this.$refs.icon.getElementsByTagName('svg')[0].style.color =
         'rgba(0, 0, 0, 0.7)';
+      if (window.innerWidth > 767) {
+        this.$refs.icon.getElementsByTagName('svg')[0].style.height = 'auto';
+      } else {
+        this.$refs.icon.getElementsByTagName('svg')[0].style.height = '100%';
+      }
     }
   }
 };
@@ -71,7 +78,7 @@ export default {
       }
       .icon {
         position: absolute;
-        top: 46.5%;
+        top: calc(100% * 4 / 9);
         right: 0;
         left: 0;
         text-align: right;
@@ -93,6 +100,9 @@ export default {
           display: inline-block;
           vertical-align: middle;
           text-align: left;
+        }
+        .short-content {
+          display: none;
         }
       }
       .mask {
@@ -132,6 +142,53 @@ export default {
   }
   @media only screen and (max-width: 767px) {
     width: calc(100% - 10px);
+    .entrance-block {
+      padding-top: 25%;
+      .entrance-content {
+        text-align: left;
+        img {
+          display: inline-block;
+          width: 25%;
+          height: 100%;
+          vertical-align: middle;
+        }
+        .icon {
+          top: calc(100% * 2 / 3);
+          right: 75%;
+          bottom: 0;
+          left: 0;
+        }
+        .website-title {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: calc(75% - 10px);
+        }
+        .website-description {
+          display: inline-block;
+          margin: 5px 10px;
+          width: calc(75% - 30px);
+          height: calc(100% - 30px);
+          vertical-align: bottom;
+          .content {
+            display: none;
+          }
+          .short-content {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: left;
+          }
+        }
+        .mask {
+          display: none;
+          &:hover {
+            .mask {
+              display: none;
+            }
+          }
+        }
+      }
+    }
   }
 }
 </style>

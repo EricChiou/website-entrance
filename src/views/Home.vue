@@ -10,9 +10,9 @@
       <div class="content">
         <Header></Header>
         <Album></Album>
-        <div class="show-bg"></div>
+        <!-- <div class="show-bg"></div> -->
         <Entrance></Entrance>
-        <div class="show-bg"></div>
+        <!-- <div class="show-bg"></div> -->
         <About></About>
         <Footer></Footer>
       </div>
@@ -78,11 +78,11 @@ export default {
   }
   .main {
     overflow: auto;
-    .content {
-      .show-bg {
-        height: 30vh;
-      }
-    }
+    // .content {
+    //   .show-bg {
+    //     height: 30vh;
+    //   }
+    // }
   }
   @media only screen and (max-width: 767px) {
     .bg {
@@ -93,14 +93,14 @@ export default {
         display: inline-block;
       }
     }
-    .main {
-      .content {
-        margin: 0;
-        .show-bg {
-          height: 20vh;
-        }
-      }
-    }
+    // .main {
+    //   .content {
+    //     margin: 0;
+    //     .show-bg {
+    //       height: 20vh;
+    //     }
+    //   }
+    // }
   }
 }
 </style>

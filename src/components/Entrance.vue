@@ -26,6 +26,7 @@ export default {
         title: 'Wedding Invitation Card',
         content:
           '該來的終於還是來啦！\n我的婚禮將於 2019/11/23 舉辦，歡迎大家來參加喔～\n這是電子喜帖的連結。',
+        shortContent: '我的婚禮將於 2019/11/23 舉辦，歡迎大家來參加喔～',
         icon: null
       },
       {
@@ -34,6 +35,7 @@ export default {
         title: 'Frontend Daily Life',
         content:
           '記錄我在前端遇到的大小事、心得及其他相關技術，並推薦一些好用網站。',
+        shortContent: '記錄我在前端遇到的大小事、心得及其他相關技術。',
         icon: `
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="currentColor">
             <g id="BOOK_1_" enable-background="new">
@@ -52,6 +54,7 @@ export default {
         title: 'Javascript Components',
         content:
           '各種用純 Javascript, HTML, CSS 製作的元件，例如 Image Editor, Custom Scroll Bar, SHA-3 加密, ...等等。',
+        shortContent: '各種用純 Javascript, HTML, CSS 製作的元件。',
         icon: `
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
             <path d="M480 288v-64h-34.7c-2-12.1-5.2-23.8-9.3-35l30-17.3-32-55.4-30 17.3c-7.7-9.3-16.3-17.9-25.6-25.6l17.3-30-55.4-32L323 76c-11.2-4.2-22.9-7.3-35-9.3V32h-64v34.7c-12.1 2-23.8 5.2-35 9.3l-17.3-30-55.4 32 17.3 30c-9.3 7.7-17.9 16.3-25.6 25.6l-30-17.3-32 55.4L76 189c-4.2 11.2-7.3 22.9-9.3 35H32v64h34.7c2 12.1 5.2 23.8 9.3 35l-30 17.3 32 55.4 30-17.3c7.7 9.3 16.3 17.9 25.6 25.6l-17.3 30 55.4 32 17.3-30c11.2 4.2 22.9 7.3 35 9.3V480h64v-34.7c12.1-2 23.8-5.2 35-9.3l17.3 30 55.4-32-17.3-30c9.3-7.7 17.9-16.3 25.6-25.6l30 17.3 32-55.4-30-17.3c4.2-11.2 7.3-22.9 9.3-35H480zm-224-64c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zM141.2 343c-18.3-24.2-29.2-54.3-29.2-87 0-6.1.4-12.1 1.1-18l46.9 17.1v.9c0 17.8 4.9 34.5 13.3 48.8L141.2 343zm40.7-148L135 177.9c20.1-31.1 51.8-53.9 89-62.3v49.9c-16.6 5.9-31.1 16.2-42.1 29.5zM256 400c-23.7 0-46-5.7-65.8-15.9l32.1-38.2c10.5 3.9 21.8 6.1 33.7 6.1s23.2-2.2 33.7-6.1l32.1 38.2C302 394.3 279.7 400 256 400zm32-234.5v-49.9c37.2 8.4 68.9 31.2 89 62.3L330.1 195c-11-13.3-25.5-23.6-42.1-29.5zM370.8 343l-32.1-38.2c8.4-14.3 13.3-31 13.3-48.8v-.9l46.9-17.1c.7 5.9 1.1 11.9 1.1 18 0 32.7-10.9 62.8-29.2 87z"/>
@@ -63,29 +66,24 @@ export default {
         imgSrc: require('../assets/images/calico_head.png'),
         title: 'YT Player',
         content:
-          '可以搜尋 Youtube 影片並將你想看的影片將入播放列表依序播放，或是直接輸入 Video ID 加入播放列表。',
+          '可以搜尋 Youtube 影片並將你想看的影片加入播放列表，或是直接輸入 Video ID 加入播放列表。',
+        shortContent:
+          '可以搜尋 Youtube 影片並加入播放列表。',
         icon: `
           <svg enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path fill="currentColor" d="M260.4,449c-57.1-1.8-111.4-3.2-165.7-5.3c-11.7-0.5-23.6-2.3-35-5c-21.4-5-36.2-17.9-43.8-39c-6.1-17-8.3-34.5-9.9-52.3   C2.5,305.6,2.5,263.8,4.2,222c1-23.6,1.6-47.4,7.9-70.3c3.8-13.7,8.4-27.1,19.5-37c11.7-10.5,25.4-16.8,41-17.5   c42.8-2.1,85.5-4.7,128.3-5.1c57.6-0.6,115.3,0.2,172.9,1.3c24.9,0.5,50,1.8,74.7,5c22.6,3,39.5,15.6,48.5,37.6   c6.9,16.9,9.5,34.6,11,52.6c3.9,45.1,4,90.2,1.8,135.3c-1.1,22.9-2.2,45.9-8.7,68.2c-7.4,25.6-23.1,42.5-49.3,48.3   c-10.2,2.2-20.8,3-31.2,3.4C366.2,445.7,311.9,447.4,260.4,449z M205.1,335.3c45.6-23.6,90.7-47,136.7-70.9   c-45.9-24-91-47.5-136.7-71.4C205.1,240.7,205.1,287.6,205.1,335.3z"/></g></svg>
         `
       }
     ]
-  }),
-  methods: {
-    link2Website: url => {
-      console.log(window.location.origin + '/' + url);
-      window.location = window.location.origin + '/' + url;
-    }
-  }
+  })
 };
 </script>
 
 <style lang="scss" scoped>
 #entrance-container {
-  padding: 3vh 0 5vh 0;
-  background-color: #212121;
+  padding: 10vh 0 16vh 0;
+  background-color: rgba(0, 0, 0, 0.25);
   .title {
     text-align: center;
-    background-color: #212121;
     .text {
       position: relative;
       display: inline-block;
@@ -109,7 +107,7 @@ export default {
     padding: 0 10px 10px 10px;
   }
   @media only screen and (max-width: 767px) {
-    padding: 1vh 0 2vh 0;
+    padding: 5vh 0 8vh 0;
     .title {
       .text {
         font-size: 24px;
