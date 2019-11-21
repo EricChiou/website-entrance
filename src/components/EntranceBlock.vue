@@ -1,6 +1,6 @@
 <template>
   <div class="entrance-block-container">
-    <div class="entrance-block" @click="link2Website(website.path)">
+    <div class="entrance-block" @click="link2Website(website.url)">
       <div class="entrance-content">
         <img :src="website.imgSrc" />
         <div ref="icon" class="icon"></div>
@@ -23,7 +23,7 @@
 export default {
   props: {
     website: {
-      path: String,
+      url: String,
       imgSrc: String,
       title: String,
       content: String,
@@ -32,8 +32,8 @@ export default {
     }
   },
   methods: {
-    link2Website(path) {
-      window.location = 'https://www.calicomoo.ml/' + path;
+    link2Website(url) {
+      window.location = url;
     }
   },
   mounted() {
