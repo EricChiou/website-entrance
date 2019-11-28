@@ -4,7 +4,7 @@
       <img class="header-bi" src="../assets/images/header_bi.png">
       <img class="header-bi-m" src="../assets/images/header_bi_m.png">
       <img class="title" src="../assets/images/header_title.png">
-      <img class="sub-title" src="../assets/images/header_sub_title.png">
+      <!-- <img class="sub-title" src="../assets/images/header_sub_title.png"> -->
     </div>
   </div>
 </template>
@@ -30,14 +30,14 @@ export default {
   }
   .title {
     position: absolute;
-    top: 8%;
-    left: 15%;
-    height: 60%;
+    top: 10%;
+    left: 20%;
+    height: 70%;
   }
   .sub-title {
     position: absolute;
     top: 45%;
-    left: 30%;
+    left: 35%;
     height: 50%;
   }
   @media only screen and (max-width: 767px) {
@@ -48,10 +48,10 @@ export default {
       display: block;
     }
     .title {
-      left: 20%;
+      left: 33%;
     }
     .sub-title {
-      left: 48%;
+      left: 55%;
     }
   }
 }
