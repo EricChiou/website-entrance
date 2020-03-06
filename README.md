@@ -1,5 +1,5 @@
 # website-entrance
-Demo: https://www.calicomoo.ml/entrance/  
+Demo: https://www.calicomoomoo.ml/entrance/  
 
 ## Project setup
 ```

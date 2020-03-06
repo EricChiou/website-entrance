@@ -9,7 +9,7 @@
     <div class="content">
       <iframe
         ref="iframe"
-        src="https://www.calicomoo.ml/about?color=#eeeeee&fontSize=18px&textAlign=center"
+        src="https://www.calicomoomoo.ml/about?color=#eeeeee&fontSize=18px&textAlign=center"
       ></iframe>
     </div>
   </div>

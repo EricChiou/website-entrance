@@ -21,7 +21,7 @@ export default {
   data: () => ({
     websites: [
       {
-        url: 'https://www.calicomoo.ml/wedding',
+        url: 'https://www.calicomoomoo.ml/wedding',
         imgSrc: require('../assets/images/invitation_card.png'),
         title: 'Wedding Invitation Card',
         content:
@@ -30,7 +30,7 @@ export default {
         icon: null
       },
       {
-        url: 'https://www.calicomoo.ml/frontend-daily-life',
+        url: 'https://www.calicomoomoo.ml/frontend-daily-life',
         imgSrc: require('../assets/images/moomoo_head.png'),
         title: 'Frontend Daily Life',
         content:
@@ -49,7 +49,7 @@ export default {
         `
       },
       {
-        url: 'https://www.calicomoo.ml/javascript-components',
+        url: 'https://www.calicomoomoo.ml/javascript-components',
         imgSrc: require('../assets/images/moomoo_head.png'),
         title: 'Javascript Components',
         content:
@@ -62,7 +62,7 @@ export default {
         `
       },
       {
-        url: 'https://www.calicomoo.ml/yt-player',
+        url: 'https://www.calicomoomoo.ml/yt-player',
         imgSrc: require('../assets/images/calico_head.png'),
         title: 'YT Player',
         content:
@@ -77,7 +77,7 @@ export default {
         `
       },
       {
-        url: 'https://www.calicomoo.ml:8001',
+        url: 'https://www.calicomoomoo.ml:8001',
         imgSrc: require('../assets/images/moomoo_head.png'),
         title: 'Cloud',
         content: '我們的雲端硬碟。',
