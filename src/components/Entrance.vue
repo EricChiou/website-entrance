@@ -78,10 +78,10 @@ export default {
       },
       {
         url: 'https://www.calicomoomoo.ml:8001',
-        imgSrc: require('../assets/images/moomoo_head.png'),
+        imgSrc: require('../assets/images/calico_head.png'),
         title: 'Cloud',
-        content: '我們的雲端硬碟。',
-        shortContent: '我們的雲端硬碟。',
+        content: 'Calico & MooMoo 雲端硬碟。',
+        shortContent: 'Calico & MooMoo 雲端硬碟。',
         icon: `
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path d="M0 0h24v24H0z" fill="none"/>
