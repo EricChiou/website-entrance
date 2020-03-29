@@ -106,7 +106,6 @@ export default {
       height: 75px;
       font-size: 32px;
       font-weight: bold;
-      text-decoration: underline;
       color: #eeeeee;
       line-height: 75px;
       img {

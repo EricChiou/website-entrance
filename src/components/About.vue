@@ -37,14 +37,12 @@ export default {
     font-size: 32px;
     font-weight: bold;
     text-align: center;
-    text-decoration: underline;
     .text {
       position: relative;
       display: inline-block;
       height: 75px;
       font-size: 32px;
       font-weight: bold;
-      text-decoration: underline;
       color: #eeeeee;
       line-height: 75px;
       img {

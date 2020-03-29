@@ -47,7 +47,6 @@ export default {
         font-size: 32px;
         font-weight: bold;
         font-family: monospace;
-        text-decoration: underline;
         color: #eeeeee;
       }
       img {
