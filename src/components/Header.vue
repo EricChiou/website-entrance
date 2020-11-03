@@ -31,7 +31,7 @@ export default {
   .title {
     position: absolute;
     top: 10%;
-    left: 20%;
+    left: 19%;
     height: 70%;
   }
   .sub-title {
@@ -48,7 +48,8 @@ export default {
       display: block;
     }
     .title {
-      left: 33%;
+      left: 25%;
+      transform: scale(0.8);
     }
     .sub-title {
       left: 55%;
