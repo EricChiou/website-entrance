@@ -9,7 +9,7 @@
     <div class="content">
       <iframe
         ref="iframe"
-        src="https://www.calicomoomoo.ml/about?color=#eeeeee&fontSize=18px&textAlign=center"
+        :src="iframeUrl"
       ></iframe>
     </div>
   </div>
@@ -17,8 +17,11 @@
 
 <script>
 export default {
+  data: () => ({
+    iframeUrl: `https://www.calicomoomoo.ml/about?color=${encodeURIComponent('#eeeeee')}&fontSize=18px&textAlign=center`
+  }),
   created() {
-    window.onmessage = event => {
+    window.onmessage = (event) => {
       if (event.data.id === 'about') {
         this.$refs.iframe.style.height = `${event.data.height}px`;
       }
