@@ -77,10 +77,10 @@ export default {
         `
       },
       {
-        url: 'https://www.calicomoomoo.ml:8001',
+        url: 'https://www.calicomoomoo.ml/otter-cloud',
         imgSrc: require('../assets/images/calico_head.png'),
-        title: 'Cloud',
-        content: 'Calico & MooMoo 雲端硬碟。',
+        title: 'Otter Cloud',
+        content: 'Calico & MooMoo Otter 雲端硬碟。',
         shortContent: 'Calico & MooMoo 雲端硬碟。',
         icon: `
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
