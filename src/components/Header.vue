@@ -1,10 +1,5 @@
 <template>
   <div id="header-container">
-    <!-- <div class="background-img">
-      <img class="header-bi" src="../assets/images/header_bi.png">
-      <img class="header-bi-m" src="../assets/images/header_bi_m.png">
-      <img class="title" src="../assets/images/header_title.png">
-    </div> -->
     <div class="title">
       <img src="../assets/images/calico_head.png" />
       <div class="text">Calico & MooMoo</div>
@@ -30,6 +25,7 @@ export default {
       display: inline-block;
       vertical-align: middle;
     }
+
     .text {
       margin: 0 15px;
       font-size: 60px;
@@ -49,15 +45,18 @@ export default {
         font-size: 22px;
       }
     }
+
     img {
-      margin: 5px;
+      margin: 15px 5px;
       height: 120px;
 
       @media only screen and (max-width: 1024px) {
+        margin: 10px 5px;
         height: 100px;
       }
 
       @media only screen and (max-width: 767px) {
+        margin: 5px;
         height: 65px;
       }
 

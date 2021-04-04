@@ -34,8 +34,8 @@ export default {
     Album,
     Entrance,
     About,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>
 

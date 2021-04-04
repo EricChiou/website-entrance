@@ -28,13 +28,13 @@ export default {
       title: String,
       content: String,
       shortContent: String,
-      icon: String
-    }
+      icon: String,
+    },
   },
   methods: {
     link2Website(url) {
       window.location = url;
-    }
+    },
   },
   mounted() {
     if (this.website.icon) {
@@ -49,7 +49,7 @@ export default {
         this.$refs.icon.getElementsByTagName('svg')[0].style.height = '100%';
       }
     }
-  }
+  },
 };
 </script>
 

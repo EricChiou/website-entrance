@@ -18,7 +18,7 @@
 <script>
 export default {
   data: () => ({
-    iframeUrl: `https://www.calicomoomoo.ml/about?color=${encodeURIComponent('#eeeeee')}&fontSize=18px&textAlign=center`
+    iframeUrl: `https://www.calicomoomoo.ml/about?color=${encodeURIComponent('#eeeeee')}&fontSize=18px&textAlign=center`,
   }),
   created() {
     window.onmessage = (event) => {
@@ -26,7 +26,7 @@ export default {
         this.$refs.iframe.style.height = `${event.data.height}px`;
       }
     };
-  }
+  },
 };
 </script>
 
