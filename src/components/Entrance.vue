@@ -7,7 +7,11 @@
       </div>
     </div>
     <div class="entrance-list">
-      <EntranceBlock v-for="website in websites" :key="website.link" :website="website"></EntranceBlock>
+      <EntranceBlock
+        v-for="website in websites"
+        :key="website.link"
+        :website="website"
+      ></EntranceBlock>
     </div>
   </div>
 </template>
@@ -33,8 +37,7 @@ export default {
         url: 'https://www.calicomoomoo.ml/frontend-daily-life',
         imgSrc: require('../assets/images/moomoo_head.png'),
         title: 'Frontend Daily Life',
-        content:
-          '記錄我在前端遇到的大小事、心得及其他相關技術，並推薦一些好用網站。',
+        content: '記錄我在前端遇到的大小事、心得及其他相關技術，並推薦一些好用網站。',
         shortContent: '記錄我在前端遇到的大小事、心得及其他相關技術。',
         icon: `
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="currentColor">
@@ -120,6 +123,7 @@ export default {
   .entrance-list {
     margin: 5px 10%;
     padding: 0 10px 10px 10px;
+    text-align: center;
   }
   @media only screen and (max-width: 767px) {
     padding: 5vh 0 8vh 0;
@@ -136,7 +140,6 @@ export default {
     .entrance-list {
       margin: 5px 0;
       padding: 0 5px 10px 5px;
-      text-align: center;
     }
   }
 }
