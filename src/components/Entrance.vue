@@ -26,7 +26,7 @@ export default {
   data: () => ({
     websites: [
       {
-        url: 'https://www.calicomoomoo.ml/wedding',
+        url: 'https://www.calicomoomoo.com/wedding',
         imgSrc: require('../assets/images/invitation_card.png'),
         title: 'Wedding Invitation Card',
         content:
@@ -35,7 +35,7 @@ export default {
         icon: null,
       },
       {
-        url: 'https://www.calicomoomoo.ml/frontend-daily-life',
+        url: 'https://www.calicomoomoo.com/frontend-daily-life',
         imgSrc: require('../assets/images/moomoo_head.png'),
         title: 'Frontend Daily Life',
         content: '記錄我在前端遇到的大小事、心得及其他相關技術，並推薦一些好用網站。',
@@ -53,7 +53,7 @@ export default {
         `,
       },
       {
-        url: 'https://www.calicomoomoo.ml/javascript-components',
+        url: 'https://www.calicomoomoo.com/javascript-components',
         imgSrc: require('../assets/images/moomoo_head.png'),
         title: 'Javascript Components',
         content:
@@ -66,7 +66,7 @@ export default {
         `,
       },
       {
-        url: 'https://www.calicomoomoo.ml/yt-player',
+        url: 'https://www.calicomoomoo.com/yt-player',
         imgSrc: require('../assets/images/calico_head.png'),
         title: 'YT Player',
         content:
@@ -81,7 +81,7 @@ export default {
         `,
       },
       {
-        url: 'https://www.calicomoomoo.ml/otter-cloud',
+        url: 'https://www.calicomoomoo.com/otter-cloud',
         imgSrc: require('../assets/images/calico_head.png'),
         title: 'Otter Cloud',
         content: 'Calico & MooMoo Otter 雲端硬碟。',
@@ -94,7 +94,7 @@ export default {
         `,
       },
       {
-        url: 'https://www.calicomoomoo.ml/minecraft',
+        url: 'https://www.calicomoomoo.com/minecraft',
         imgSrc: require('../assets/images/moomoo_head.png'),
         title: 'Minecarft Server',
         content: 'Calico & MooMoo Minecraft Server。',
