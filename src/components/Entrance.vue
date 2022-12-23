@@ -108,6 +108,21 @@ export default {
           </svg>
         `,
       },
+      {
+        url: 'https://www.calicomoomoo.com/otter-calendar',
+        imgSrc: require('../assets/images/otter_calendar.png'),
+        title: 'Otter Calendar',
+        content: '可以記錄事件最後執行時間並且顯示下次執行時間。',
+        shortContent: '記錄事件最後執行時間並顯示下次執行時間。',
+        icon: `
+          <svg width="32" height="32" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="m17.782 17.03l-3.413.235l-.023.002c-1.117.09-2.214.335-3.257.725l-2.197.794a3.597 3.597 0 0 1-2.876-.189a3.342 3.342 0 0 1-1.732-2.211L3.08 11.093a3.21 3.21 0 0 1 .469-2.503a3.468 3.468 0 0 1 2.177-1.452l9.843-2.06c1.87-.392 3.716.744 4.124 2.537l1.227 5.392a3.217 3.217 0 0 1-.61 2.7a3.506 3.506 0 0 1-2.528 1.323z"/>
+              <path d="m10 10l.972 4L15 11z"/>
+            </g>
+          </svg>
+        `,
+      },
     ],
   }),
 };
